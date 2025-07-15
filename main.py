@@ -1,6 +1,5 @@
 import os
 import shutil
-import datetime
 
 # Get the current logged-in username
 system = os.environ
@@ -41,5 +40,5 @@ for file in files_in_source:
 
             # Move the file from Downloads to the corresponding folder
             shutil.move(source_file, destination_file)
-            print(f'Movido {file} - {dest_path}')
+            print(f'Moved: {file} - {dest_path}')
             break # Exit inner loop after moving the file to avoid duplicates
